@@ -3,7 +3,7 @@
 ## First step
 
 1. Install Node.js
-2. Install pnpm: ```npm install -g pnpm``
+2. Install pnpm: ```npm install -g pnpm```
 
 ## Second step
 
