@@ -1,0 +1,58 @@
+@use 'var' as *;
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: $thirdColor;
+}
+.header ul{
+list-style: none;
+
+}
+.header li{
+    display: inline;
+}
+.main-menu{
+    margin: 1em;
+    margin-left: 0em;
+}
+.header a{
+    font-size: 2em;
+    text-decoration:none ;
+    color: $fourthColor;
+    font-weight: bold;
+    padding: 0.5em;
+}
+.header a:hover{
+    background-color: $fifthcColor;
+}
+.header span{
+    font-size: 1.5em;
+    color:$fourthColor;
+    padding: 0.8em;
+    display: none;
+}
+.header span:hover{
+    background-color: $fifthcColor;
+}
+@media(max-width:$breakpoint){
+    
+    .header span{
+        display: block;
+        background-color: $thirdColor;
+        position: absolute;
+        cursor: pointer;
+    }
+    .drop:hover .main-menu{
+        display: inline;
+        position: absolute;
+        top:3em;
+    }
+    .main-menu{
+        display: none;
+    }
+    .header li{
+        display: block;
+        padding: 1em;
+        background-color: $thirdColor;
+    }
+}

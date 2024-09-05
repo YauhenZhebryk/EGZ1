@@ -1,0 +1,16 @@
+@use 'var' as *;
+
+.central-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+@media(max-width: $breakpoint){
+    .central-container{
+        flex-direction: column;
+    }
+    
+}
+*{
+    font-family: "SUSE", sans-serif;}

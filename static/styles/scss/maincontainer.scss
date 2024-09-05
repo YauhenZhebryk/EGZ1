@@ -1,0 +1,62 @@
+@use 'var' as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.main-container{
+background-color: $secondColor;
+display: inline-block;
+width: 33%;
+}
+
+.main-container img{
+width:300px;
+border-radius: 50%;
+padding: 1.5em;
+}
+.photo{
+text-align: center;
+}
+.main-container p{
+    font-size: 2em;
+    font-weight: bold;
+    color: $firstColor;
+}
+
+.main-container>h2{
+    padding: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    font-size: 3em;
+    font-weight: bold;
+    color: $firstColor;
+    border-top-style: solid;
+    border-bottom-left-radius: 1px;
+
+}
+.main-container>ol>li{
+    padding: 10px;
+    padding-left: 50px;
+}
+.main-container>ol>li>a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: $firstColor;
+}
+.main-container>ol{
+    list-style: none;
+}
+.main-container>ol>li>span{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: $firstColor;
+}
+
+@media(max-width:$breakpoint){
+    .main-container{
+        width: 100%;
+        }
+}

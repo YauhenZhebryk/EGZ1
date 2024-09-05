@@ -1,0 +1,65 @@
+@use 'var' as *;
+
+.info-container{
+    background-color: $firstColor;
+    display: inline-block;
+    width: 65%;
+}
+.info-container h2{
+    font-size: 3em;
+    color: $secondColor;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+}
+.info-container h3{
+    font-size: 2.5em;
+    color: $secondColor;
+    padding-bottom: 0.5em;
+    margin-top: 0.5em;
+
+}
+.info-container p{
+    color: $secondColor;
+    margin-left: 1em;
+}
+.line{
+    margin-left: 3em;
+    padding: 1em;
+    padding-top: 0em;
+    border-left-style: solid;
+    border-color: $secondColor;
+}
+.info-container ul{
+    margin-left: 3em;
+    list-style: none;
+}
+.dot{
+    color:$secondColor;
+    position: relative;
+    left: -15px;
+    top: 55px;
+    font-size: 1.5em;
+}
+
+@media(max-width:$breakpoint){
+    .info-container{
+        width: 100%;
+        background-color: $secondColor;
+    }
+    .dot{
+        color:$firstColor;
+    }
+    .line{
+        border-color: $firstColor;
+    }
+    .info-container p{
+        color: $firstColor;
+    }
+    .info-container h2{
+        color: $firstColor;
+    }
+    .info-container h3{
+        color: $firstColor;
+    
+    }
+}
